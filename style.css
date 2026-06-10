@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Bungee&family=Press+Start+2P&family=Russo+One&display=swap');
+
 * {
     margin: 0;
-    padding: 2;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
 }
 
 h1, h2 {
-    color: blueviolet;
+    color: white;
 }
 
 .fundo {
-    background-image: linear-gradient(45deg, #FF0033, #FF6600, #FFCC00, #00F2FE);
+    background-image: linear-gradient(45deg, #00008b, #008b8b);
     height: 100vh;
     color: white;
     text-align: center;
@@ -19,12 +22,41 @@ h1, h2 {
 }
 
 .calculadora {
-  position  : absolute;
-  background-color: #0004ff;
+  position: absolute;
+  background-color: transparent;
   top: 50%;
   left: 50%;
-  border-radius: 15px;
   padding: 15px;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
+.botao {
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    margin: 3px;
+    background-color: #008b8b;
+    color: white;
+    border-radius: 30%;
+    cursor: pointer;
+    border: none;
+}
+
+.botao:hover {
+    background-color: gray;
+}
+
+#resultado {
+    background-color: transparent;
+    width: 310px; 
+    height: 60px; 
+    margin: 10px auto 40px auto; 
+    font-size: 25px;
+    color: white;
+    text-align: center; 
+    padding: 10px;
+    box-sizing: border-box; 
+    border-radius: 15px;
+    border: 5px solid #208b8b;
+}
